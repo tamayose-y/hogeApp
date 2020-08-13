@@ -5,7 +5,7 @@ public class InputButtonScript : MonoBehaviour {
  
     public void OnClickInputButton()
     {
-        SceneManager.LoadScene("list");
+        SceneManager.LoadScene("Input");
     }
  
 }
