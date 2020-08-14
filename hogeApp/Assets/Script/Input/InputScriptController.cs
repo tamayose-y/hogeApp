@@ -1,19 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
- 
-public class DialogScript : MonoBehaviour {
-    
-    
+
+public class InputScriptController : MonoBehaviour
+{
+
     public GameObject Dialog = null;
 
-    void Start(){
-
+    // Start is called before the first frame update
+    void Start()
+    {
         if(Dialog != null)
         {
             GameObject.Find ("Dialog").SetActive (false);
         }
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void OnClickBackButton()
+    {
+        SceneManager.LoadScene("list");
+    }
+ 
+    public void OnClickInputButton()
+    {
+        SceneManager.LoadScene("list");
+    }
+
 
     void OnClickCheckButton()
     {
@@ -37,5 +55,4 @@ public class DialogScript : MonoBehaviour {
     {
         GameObject.Find ("Dialog").SetActive (false);
     }
- 
 }
